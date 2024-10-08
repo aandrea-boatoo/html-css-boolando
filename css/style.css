@@ -70,9 +70,20 @@ header img{
 }
 
 .container{
+    position: relative;
     width: 33%;
     height: 500px;
     margin: 25px 0;
+}
+
+.container a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+
 }
 
 .img{
@@ -130,7 +141,7 @@ h4{
     text-transform: uppercase;
 }
 
-p{
+.img p{
     height: 15px;
     color: red;
 }
@@ -143,6 +154,10 @@ p span{
 /* hover */
 .img:hover .img2{
     z-index: 10;
+}
+
+.img:hover a{
+    z-index: 12;
 }
 
 /* Footer */
@@ -159,4 +174,52 @@ footer{
 
 #left-ft a{
     font-size: smaller;
+}
+
+
+/* stripe bodice */
+#stripe{
+    max-width: 1200px;
+    margin:  100px auto 25px;
+}
+#stripe div{
+    width: 33%;
+    align-content: center;
+
+}
+
+#stripe  .img-cont img{
+    width: 100%;
+}
+
+#stripe .text{
+    width: 33%;
+    height: 600px;
+}
+
+
+#stripe #shop-cont{
+    width: 33%;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+#stripe #shop-cont i{
+    padding: 25px;
+    font-size: 10em;
+    text-align: center;
+}
+
+#stripe #shop-cont a{
+    border-radius: 10px;
+    margin: 10px;
+    width: 80%;
+}
+
+#stripe #shop-cont #bag{
+    background-color: orange;
+}
+
+#stripe #shop-cont #buy-now{
+    background-color: orangered;
 }
