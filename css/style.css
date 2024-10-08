@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica;
-    font-weight: 600;
 }
 
 /* Variabili */
@@ -19,6 +18,11 @@
 /* flelx utilities */
 .flex{
     display: flex;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex-direction: column;
 }
 .between{
     justify-content: space-between;
@@ -33,13 +37,14 @@ header{
     display: block;
     background-color: var(--bg-header);
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
 }
 
 #hd-cont{
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -62,6 +67,62 @@ header img{
 }
 
 /* main */
+
+.row{
+    max-width: 900px;
+    margin:  100px auto;
+}
+
+.container{
+    width: 33%;
+    height: 500px;
+    margin: 25px 0;
+}
+
+.img{
+    position: relative;
+}
+
+div > img{
+    width: 100%;
+}
+
+.tag{
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+}
+
+#sale{
+    background-color: red;
+    padding: 2px;
+}
+
+#sustainability{
+    background-color: green;
+    padding: 2px;
+}
+
+figure{
+    height: 15px;
+    line-height: 15px;
+}
+
+h4{
+    height: 25px;
+    text-transform: uppercase;
+}
+
+p{
+    height: 15px;
+    color: red;
+}
+
+p span{
+    color: black;
+    text-decoration: line-through ;
+}
 
 
 /* Footer */
