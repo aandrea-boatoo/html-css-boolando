@@ -10,11 +10,7 @@
     --bg-header: #FF6900;
     --bg-footer: #1a1a1a;
 }
-
-.{
-    border: 1px solid red;
-}
-
+ 
 /* flelx utilities */
 .flex{
     display: flex;
@@ -70,7 +66,7 @@ header img{
 
 #row{
     max-width: 900px;
-    margin:  100px auto;
+    margin:  100px auto 25px;
 }
 
 .container{
@@ -86,12 +82,23 @@ header img{
 div > img{
     width: 100%;
 }
+.primary-img{
+    position: relative;
+    z-index: 5;
+}
+.img2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
 
 .tag{
     color: white;
     position: absolute;
     bottom: 25px;
     left: 0;
+    z-index: 20;
 }
 
 #sale{
@@ -102,6 +109,15 @@ div > img{
 #sustainability{
     background-color: green;
     padding: 2px;
+}
+
+#heart{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 20;
+    top: 15px;
+    right: 0px;
+    padding: 5px 10px;
 }
 
 figure{
@@ -124,6 +140,10 @@ p span{
     text-decoration: line-through ;
 }
 
+/* hover */
+.img:hover .img2{
+    z-index: 10;
+}
 
 /* Footer */
 footer{
