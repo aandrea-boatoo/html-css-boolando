@@ -11,7 +11,7 @@
     --bg-footer: #1a1a1a;
 }
 
-.debug{
+.{
     border: 1px solid red;
 }
 
@@ -53,7 +53,7 @@ ul{
     list-style: none;
 }
 
-header a{
+a{
     color: white;
     padding: 5px;
     text-decoration: none;
@@ -68,7 +68,7 @@ header img{
 
 /* main */
 
-.row{
+#row{
     max-width: 900px;
     margin:  100px auto;
 }
@@ -128,4 +128,15 @@ p span{
 /* Footer */
 footer{
     background-color: var(--bg-footer);
+}
+
+#ft-cont{
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+#left-ft a{
+    font-size: smaller;
 }
