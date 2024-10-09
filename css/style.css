@@ -72,6 +72,7 @@ header img{
 .container{
     position: relative;
     width: 33%;
+    min-width: 200px;
     height: 500px;
     margin: 25px 0;
 }
@@ -132,16 +133,14 @@ div > img{
 }
 
 figure{
-    height: 15px;
     line-height: 15px;
 }
 
 h4{
-    height: 25px;
     text-transform: uppercase;
 }
 
-.img p{
+.container p{
     height: 15px;
     color: red;
 }
